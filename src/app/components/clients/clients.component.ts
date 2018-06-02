@@ -22,7 +22,7 @@ export class ClientsComponent implements OnInit {
   }
   getTotalOwed() {
     this.totalOwed = this.clients.reduce((total, client) => {
-      return total + client.balance;
+      return total + parseFloat(client.balance.toString());
     }, 0);
     // this can be written like the above in short. You always have to set the value so that it can be displayed! (this.totalOwed = total)
     // const total = this.clients.reduce((total, client) => {
