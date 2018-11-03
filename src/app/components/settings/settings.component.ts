@@ -9,6 +9,7 @@ import { Settings } from '../../models/Settings'
   templateUrl: './settings.component.html',
   styleUrls: ['./settings.component.css']
 })
+
 export class SettingsComponent implements OnInit {
   settings: Settings;
 

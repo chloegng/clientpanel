@@ -4,7 +4,6 @@
       <i class="fa fa-arrow-circle-o-left"></i>
       Back to Dashboard
     </a>
-
   </div>
   <div class="col-md-6">
 
@@ -17,22 +16,27 @@
   <div class="card-body">
     <form (submit)="onSubmit()">
       <div class="form-group">
-        <label>Allow Registration</label>
-        <input type="checkbox" name="allowRegistration" [checked]="settings.allowRegistration" (change)="settings.allowRegistration = !settings.allowRegistration">
+        <label>
+          <input type="checkbox" name="allowRegistration" [checked]="settings.allowRegistration" (change)="settings.allowRegistration = !settings.allowRegistration">
+           Allow Registration
+        </label>
       </div>
     </form>
     <form (submit)="onSubmit()">
       <div class="form-group">
-        <label>Disable Balance On Add</label>
-        <input type="checkbox" name="disableBalanceOnAdd" [checked]="settings.disableBalanceOnAdd" (change)="settings.disableBalanceOnAdd = !settings.disableBalanceOnAdd">
+        <label>
+          <input type="checkbox" name="disableBalanceOnAdd" [checked]="settings.disableBalanceOnAdd" (change)="settings.disableBalanceOnAdd = !settings.disableBalanceOnAdd">
+          Disable Balance On Add
+        </label>
       </div>
     </form>
     <form (submit)="onSubmit()">
       <div class="form-group">
-        <label>Disable Balance On Edit</label>
-        <input type="checkbox" name="disableBalanceOnEdit" [checked]="settings.disableBalanceOnEdit" (change)="settings.disableBalanceOnEdit = !settings.disableBalanceOnEdit">
+        <label>
+          <input type="checkbox" name="disableBalanceOnEdit" [checked]="settings.disableBalanceOnEdit" (change)="settings.disableBalanceOnEdit = !settings.disableBalanceOnEdit">
+          Disable Balance On Edit
+        </label>
       </div>
-
       <input type="submit" value="Submit" class="btn btn-primary btn-block">
     </form>
   </div>

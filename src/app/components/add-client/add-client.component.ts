@@ -4,7 +4,7 @@ import { FlashMessagesService } from 'angular2-flash-messages';
 import { ClientService } from '../../services/client.service';
 import { Router } from '@angular/router';
 import { SettingsService } from '../../services/settings.service';
-import { Settings } from '../models/Settings';
+import { Settings } from '../../models/Settings';
 
 @Component({
   selector: 'app-add-client',
