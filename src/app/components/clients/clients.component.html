@@ -12,6 +12,7 @@
       <th>Name</th>
       <th>Email</th>
       <th>Balance</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -20,7 +21,7 @@
       <td>{{ client.email }}</td>
       <td>{{ client.balance | currency: "USD":"symbol" }}</td>
       <td><a routerLink="client/{{ client.id }}" class="btn btn-secondary btn-sm">
-        <i class="fa fa-arrow-circle-o-right"></i>Details</a></td>
+        <i class="fa fa-arrow-circle-o-right"></i> Details</a></td>
     </tr>
   </tbody>
 </table>
