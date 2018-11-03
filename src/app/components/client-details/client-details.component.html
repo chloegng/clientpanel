@@ -27,7 +27,7 @@
         [class.text-danger]="hasBalance"
         [class.text-success]="!hasBalance"
         >
-        {{ client.balance | currency:"USD":"symbol"}}
+        {{ client.balance | currency:"USD":"symbol" }}
       </span>
       <small>
         <a (click)="showBalanceUpdateInput = !showBalanceUpdateInput">
@@ -42,7 +42,6 @@
             <span class="input-group-btn">
               <button type="submit" class="btn btn-primary">Update</button>
             </span>
-
           </div>
         </form>
       </div>
@@ -52,7 +51,6 @@
     <ul class="list-group">
       <li class="list-group-item">Contact Email: {{ client.email }}</li>
       <li class="list-group-item">Contact Phone: {{ client.phone }}</li>
-
     </ul>
   </div>
 </div>
